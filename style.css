@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+    background-color: #0d1b2a; /* Deep dark blue */
+    color: #e0e0e0;
+}
+
+.layout {
+    display: grid;
+    gap: 20px;
+    row-gap: 40px;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    height: 100vh;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #1b263b; /* Slightly lighter dark blue */
+    padding: 20px;
+    text-align:center;
+    font-size: 30px;
+    border-radius: 16px;
+    min-height: fit-content;
+    color: #ffd700; /* Yellow highlight */
+}
+
+.header:hover {
+    background-color: #415a77; /* Lighter blue on hover */
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #1b263b;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffd700; /* Yellow highlight */
+}
+
+.main {
+    grid-area: main;
+    background-color: #1b263b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.details1, .details2 {
+    background-color: #1b263b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #1b263b;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffd700; /* Yellow highlight */
+}
+
+.footer2 {
+    grid-area: footer2;
+    background-color: #1b263b;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffd700; /* Yellow highlight */
+}
+
+@media (min-width: 480px) {
+    .layout {
+        grid-template-rows: 60px 1fr 60px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "details1 details2"
+            "footer footer"
+            "footer2 footer2";
+    }
+}
+
+@media (min-width: 1024px) {
+    .layout {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "nav main details1"
+            "nav main details2"
+            "footer footer footer"
+            "footer2 footer2 footer2";
+    }
+}

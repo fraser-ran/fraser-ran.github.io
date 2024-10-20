@@ -5,6 +5,7 @@ body {
     font-family: 'Calibri', sans-serif;
     background-color: #0d1b2a; /* Deep dark blue */
     color: var(--color-tertiary);
+    cursor: url('img/'), auto;
 }
 
 .layout {
@@ -57,7 +58,7 @@ body {
     border-radius: 8px;
 }
 
-.footer {
+.footer1 {
     grid-area: footer;
     background-color: #1b263b;
     padding: 20px;

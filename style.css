@@ -24,17 +24,17 @@ body {
 
 .header {
     grid-area: header;
-    background-color: #1b263b; /* Slightly lighter dark blue */
+    background-color: #1b263b;
     padding: 20px;
     text-align:center;
     font-size: 30px;
     border-radius: 16px;
     min-height: fit-content;
-    color: #ffd700; /* Yellow highlight */
+    color: #ffd700; 
 }
 
 .header:hover {
-    background-color: #415a77; /* Lighter blue on hover */
+    background-color: #415a77; 
 }
 
 .nav {
@@ -42,7 +42,7 @@ body {
     background-color: #1b263b;
     padding: 20px;
     border-radius: 8px;
-    color: #ffd700; /* Yellow highlight */
+    color: #ffd700; 
 }
 
 .main {
@@ -64,7 +64,7 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    color: #ffd700; /* Yellow highlight */
+    color: #ffd700; 
 }
 
 .footer2 {
@@ -73,7 +73,7 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    color: #ffd700; /* Yellow highlight */
+    color: #ffd700; 
 }
 
 @media (min-width: 480px) {
